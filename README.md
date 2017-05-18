@@ -1,4 +1,4 @@
-#中移物联网有限公司 OneNET C语言SDK, /video_sdk
+#中移物联网有限公司 OneNET C语言SDK
 ## 目录
  * 编译SDK
  * 目录结构
