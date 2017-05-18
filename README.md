@@ -11,10 +11,6 @@
 3. 例如
     * 编译edp相关内容：cmake -DCMAKE_BUILD_TYPE=Debug -D_BASE=1 -D_EDP=1 -D_SAMPLE=1
     * 编译mqtt相关内容：cmake -DCMAKE_BUILD_TYPE=Debug -D_MQTT=1 -D_SAMPLE=1 
-    * 编译video相关的内容:
-      1. Video依赖公有协议MQTT，EDP等完成部分控制命令交互。
-      2. 包含VIDEO的项目使用STATIC模式编译
-      3. cmake -DCMAKE_BUILD_TYPE=Debug -D_BASE=1 -D_MQTT=1 -D_VIDEO=1 -D_MP4V2=1 -D_ONVIF=1 -D_SAMPLE=1 -D_STATIC=1
 
 ### 自定义工程中编译SDK
 1. 将SDK源码包含到自定义工程中
@@ -50,8 +46,6 @@ sdk
 2. 为什么SDK在某些芯片下运行正常，但换成另一款芯片后，程序运行异常？
 可能的问题有：
 * 该芯片的某些操作有内存对齐要求，检查使用的数据结构是否按要求进行内存对齐
-3. VIDEO smaple 支持的文件格式是？
-SAMPLE 支持MP4格式的远程回放，MP4示例文件的下载地址 http://pan.baidu.com/s/1kVLkxYf  
 
 4. ARM Linux 交叉编译 
 创建目录 mkdir armlinux
